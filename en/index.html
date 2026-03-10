@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyBudget - Documentation</title>
+    <link rel="icon" type="image/png" href="../images/favicon.png">
+    <link rel="apple-touch-icon" href="../images/favicon.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="../images/favicon.png" alt="MyBudget" class="logo-icon">
+                <span>MyBudget</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#guide">Guide</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+            <div class="nav-lang">
+                <a href="../index.html">FR</a>
+                <span>|</span>
+                <a href="index.html" class="active">EN</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <img src="../images/favicon.png" alt="MyBudget" class="hero-icon">
+            <h1>MyBudget</h1>
+            <p class="hero-subtitle">Manage your personal and family budget with ease</p>
+            <p class="hero-description">
+                iOS, iPadOS and macOS application to track your income, expenses and
+                manage your shared budget with your partner.
+            </p>
+            <div class="hero-badges">
+                <span class="badge">iOS</span>
+                <span class="badge">iPadOS</span>
+                <span class="badge">macOS</span>
+                <span class="badge">iCloud Sync</span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="features" class="section">
+            <div class="container">
+                <h2>Features</h2>
+
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">💰</div>
+                        <h3>Personal Budget</h3>
+                        <p>Track your personal income and expenses with detailed categories.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">👫</div>
+                        <h3>Shared Budget</h3>
+                        <p>Manage shared expenses with a percentage-based contribution system.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">📊</div>
+                        <h3>Monthly Summary</h3>
+                        <p>View your income, expenses and balance for each month.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">🏷️</div>
+                        <h3>Complete Categories</h3>
+                        <p>Over 70 expense categories organized by type: housing, transport, savings, etc.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">💳</div>
+                        <h3>Payment Methods</h3>
+                        <p>Distinguish your payments by bank account or Visa card.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">📅</div>
+                        <h3>Monthly Navigation</h3>
+                        <p>Easily switch between months to view your history.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">🔄</div>
+                        <h3>Quick Duplication</h3>
+                        <p>Duplicate your recurring transactions to the next month with one gesture.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">➖</div>
+                        <h3>Negative Amounts</h3>
+                        <p>Support refunds and credits with negative amounts.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">☁️</div>
+                        <h3>iCloud Sync</h3>
+                        <p>Your data automatically synchronized across all your Apple devices.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="guide" class="section section-alt">
+            <div class="container">
+                <h2>User Guide</h2>
+
+                <div class="guide-content">
+                    <article class="guide-article">
+                        <h3>🚀 Getting Started</h3>
+                        <ol>
+                            <li>Launch the MyBudget app</li>
+                            <li>Choose the <strong>Commun</strong> (Shared) or <strong>Perso</strong> (Personal) section</li>
+                            <li>Tap <strong>+</strong> to add your first transaction</li>
+                            <li>Select the type (Income or Expense) and category</li>
+                            <li>Enter the amount and save</li>
+                        </ol>
+                    </article>
+
+                    <article class="guide-article">
+                        <h3>👫 Shared Budget</h3>
+                        <p>The Commun section is designed for expenses shared between partners:</p>
+                        <ul>
+                            <li><strong>Total Cost</strong> - The total amount of the expense</li>
+                            <li><strong>Percentage</strong> - Your contribution share (e.g., 50%)</li>
+                            <li><strong>Contribution</strong> - Automatically calculated (Cost × %)</li>
+                        </ul>
+                        <p>The shared budget balance is automatically carried over to your Personal section as an expense.</p>
+                    </article>
+
+                    <article class="guide-article">
+                        <h3>💵 Personal Budget</h3>
+                        <p>The Perso section displays:</p>
+                        <ul>
+                            <li>Your personal income (Salary, Bonus, etc.)</li>
+                            <li>Your personal expenses</li>
+                            <li>Your contribution to the shared budget (automatic)</li>
+                            <li>Available balance after all expenses</li>
+                        </ul>
+                    </article>
+
+                    <article class="guide-article">
+                        <h3>🔄 Recurring Transactions</h3>
+                        <p>For monthly recurring expenses (rent, subscriptions, etc.):</p>
+                        <ol>
+                            <li>Swipe a transaction to the right</li>
+                            <li>Or use the context menu (long press)</li>
+                            <li>Select <strong>Duplicate to next month</strong></li>
+                        </ol>
+                        <p>The transaction will be copied with the same date to the next month.</p>
+                    </article>
+
+                    <article class="guide-article">
+                        <h3>📱 Multi-device</h3>
+                        <p>MyBudget automatically syncs your data via iCloud:</p>
+                        <ul>
+                            <li>Make sure you're signed in to the same iCloud account on all your devices</li>
+                            <li>Enable iCloud for the app in Settings > [Your name] > iCloud</li>
+                            <li>Changes sync within seconds</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="section">
+            <div class="container">
+                <h2>Frequently Asked Questions</h2>
+
+                <div class="faq-list">
+                    <details class="faq-item">
+                        <summary>How does the shared budget calculation work in Personal?</summary>
+                        <p>In the Personal section, shared budget expenses and the shared balance are automatically added as expenses. This represents your total contribution to the shared budget.</p>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>Can I enter negative amounts?</summary>
+                        <p>Yes, negative amounts are supported for refunds, credits or adjustments. Simply use the minus sign (-) before the amount.</p>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>Is my data secure?</summary>
+                        <p>Yes, your data is stored in your private iCloud database. It's encrypted and only accessible by devices connected to your Apple account.</p>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>Can I share my budget with my partner?</summary>
+                        <p>Currently, each user has their own database. For a shared budget, you can each enter your respective contributions with your participation percentage.</p>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>How do I edit a transaction?</summary>
+                        <p>Tap on a transaction in the list to open the edit screen. You can also use the context menu (long press) and select "Edit".</p>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>Does data sync between iPhone and Mac?</summary>
+                        <p>Yes, as long as you're signed in to the same iCloud account and sync is enabled, your data is available on iPhone, iPad and Mac.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>MyBudget © 2026 - Personal Budget Management App</p>
+            <p class="footer-links">
+                <a href="../index.html">Français</a> |
+                <a href="index.html">English</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
