@@ -106,7 +106,43 @@
                     <div class="feature-card">
                         <div class="feature-icon">☁️</div>
                         <h3>Synchronisation iCloud</h3>
-                        <p>Vos données synchronisées automatiquement entre tous vos appareils Apple.</p>
+                        <p>Vos données synchronisées automatiquement entre tous vos appareils Apple avec indicateur visuel.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">📊</div>
+                        <h3>Rapports</h3>
+                        <p>Générez des rapports détaillés par année, mois, section et type de transaction.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">📤</div>
+                        <h3>Export/Import</h3>
+                        <p>Exportez et importez vos données en JSON ou CSV avec détection des doublons.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">📧</div>
+                        <h3>Partage par courriel</h3>
+                        <p>Envoyez une transaction par courriel ou importez depuis un courriel formaté.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">🔁</div>
+                        <h3>Transactions récurrentes</h3>
+                        <p>Marquez vos dépenses mensuelles comme récurrentes pour un suivi automatique.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">🔤</div>
+                        <h3>Tri alphabétique</h3>
+                        <p>Transactions triées par catégorie (A-Z) puis par date pour une navigation facile.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">🛠️</div>
+                        <h3>Maintenance</h3>
+                        <p>Outils pour supprimer les doublons et vider la base de données.</p>
                     </div>
                 </div>
             </div>
@@ -167,7 +203,58 @@
                         <ul>
                             <li>Assurez-vous d'être connecté au même compte iCloud sur tous vos appareils</li>
                             <li>Activez iCloud pour l'app dans Réglages > [Votre nom] > iCloud</li>
-                            <li>Les modifications se synchronisent en quelques secondes</li>
+                            <li>Les modifications se synchronisent automatiquement toutes les 60 secondes</li>
+                            <li>L'icône iCloud dans la barre de navigation indique le statut de synchronisation</li>
+                            <li>Sur iOS: tirez vers le bas pour forcer la synchronisation</li>
+                            <li>Sur macOS: utilisez Cmd+R pour synchroniser manuellement</li>
+                        </ul>
+                    </article>
+
+                    <article class="guide-article">
+                        <h3>📤 Export et Import</h3>
+                        <p>Gérez vos données avec les options d'export/import:</p>
+                        <ul>
+                            <li><strong>Export JSON</strong> - Sauvegardez toutes vos transactions en format JSON</li>
+                            <li><strong>Import JSON</strong> - Restaurez vos données avec détection automatique des doublons</li>
+                            <li><strong>Export Adhoc CSV</strong> - Exportez les transactions Adhoc en CSV</li>
+                            <li><strong>Import depuis courriel</strong> - Collez un courriel formaté pour créer une transaction</li>
+                        </ul>
+                    </article>
+
+                    <article class="guide-article">
+                        <h3>📊 Rapports</h3>
+                        <p>Analysez vos finances avec les rapports:</p>
+                        <ul>
+                            <li>Filtrez par année, mois, section (Base/Perso) et récurrence</li>
+                            <li>Visualisez les totaux par catégorie</li>
+                            <li>Consultez le total général de la période</li>
+                        </ul>
+                    </article>
+
+                    <article class="guide-article">
+                        <h3>📧 Partage par courriel</h3>
+                        <p>Pour envoyer une transaction par courriel:</p>
+                        <ol>
+                            <li>Appui long sur une transaction (ou clic droit sur Mac)</li>
+                            <li>Sélectionnez "Envoyer par courriel"</li>
+                            <li>Le courriel sera pré-rempli avec les détails de la transaction</li>
+                        </ol>
+                        <p>Format d'import par courriel:</p>
+                        <pre>DATE: 2026-03-15
+SECTION: Base
+TYPE: Dépense
+CATEGORIE: Epicerie
+MONTANT: 150.00
+RECURRENT: Non
+NOTE: Courses de la semaine</pre>
+                    </article>
+
+                    <article class="guide-article">
+                        <h3>🛠️ Maintenance</h3>
+                        <p>Options de maintenance disponibles dans le menu Options > Maintenance:</p>
+                        <ul>
+                            <li><strong>Supprimer les doublons</strong> - Nettoie les transactions en double</li>
+                            <li><strong>Vider la BD</strong> - Supprime toutes les transactions (avec confirmation)</li>
                         </ul>
                     </article>
                 </div>
