@@ -56,21 +56,45 @@
 
                 <div class="features-grid">
                     <div class="feature-card">
-                        <div class="feature-icon">💰</div>
-                        <h3>Personal Budget</h3>
-                        <p>Track your personal income and expenses with detailed categories.</p>
+                        <div class="feature-icon">📋</div>
+                        <h3>Summary</h3>
+                        <p>Monthly overview: starting balance, income, total expenses and ending balance.</p>
                     </div>
 
                     <div class="feature-card">
-                        <div class="feature-icon">👫</div>
-                        <h3>Shared Budget</h3>
-                        <p>Manage shared expenses with a percentage-based contribution system.</p>
+                        <div class="feature-icon">🏠</div>
+                        <h3>Base Budget</h3>
+                        <p>Manage shared expenses with a percentage-based contribution system and budget/actual tracking.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">💰</div>
+                        <h3>Personal Budget</h3>
+                        <p>Track your personal income and expenses with starting and ending monthly balance.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">💳</div>
+                        <h3>Visa</h3>
+                        <p>Dedicated tab to track all your Visa expenses with previous balance and monthly total.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">🏦</div>
+                        <h3>Credit Line</h3>
+                        <p>Manage your credit line: limit, used balance, available, borrowings and repayments.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">🔁</div>
+                        <h3>Recurring Transactions</h3>
+                        <p>Mark your monthly expenses as recurring with the ability to skip a month.</p>
                     </div>
 
                     <div class="feature-card">
                         <div class="feature-icon">📊</div>
-                        <h3>Monthly Summary</h3>
-                        <p>View your income, expenses and balance for each month.</p>
+                        <h3>Budget Tracking</h3>
+                        <p>Compare your planned budget vs actual expenses by category with visual indicators.</p>
                     </div>
 
                     <div class="feature-card">
@@ -80,33 +104,15 @@
                     </div>
 
                     <div class="feature-card">
-                        <div class="feature-icon">💳</div>
-                        <h3>Payment Methods</h3>
-                        <p>Distinguish your payments by bank account or Visa card.</p>
-                    </div>
-
-                    <div class="feature-card">
                         <div class="feature-icon">📅</div>
                         <h3>Monthly Navigation</h3>
                         <p>Easily switch between months to view your history.</p>
                     </div>
 
                     <div class="feature-card">
-                        <div class="feature-icon">🔄</div>
-                        <h3>Quick Duplication</h3>
-                        <p>Duplicate your recurring transactions to the next month with one gesture.</p>
-                    </div>
-
-                    <div class="feature-card">
-                        <div class="feature-icon">➖</div>
-                        <h3>Negative Amounts</h3>
-                        <p>Support refunds and credits with negative amounts.</p>
-                    </div>
-
-                    <div class="feature-card">
                         <div class="feature-icon">☁️</div>
                         <h3>iCloud Sync</h3>
-                        <p>Your data automatically synchronized across all your Apple devices with visual indicator.</p>
+                        <p>Your data automatically synchronized across all your Apple devices.</p>
                     </div>
 
                     <div class="feature-card">
@@ -125,12 +131,6 @@
                         <div class="feature-icon">📧</div>
                         <h3>Email Sharing</h3>
                         <p>Send a transaction by email or import from a formatted email.</p>
-                    </div>
-
-                    <div class="feature-card">
-                        <div class="feature-icon">🔁</div>
-                        <h3>Recurring Transactions</h3>
-                        <p>Mark your monthly expenses as recurring for automatic tracking.</p>
                     </div>
 
                     <div class="feature-card">
@@ -154,57 +154,105 @@
 
                 <div class="guide-content">
                     <article class="guide-article">
-                        <h3>🚀 Getting Started</h3>
-                        <ol>
-                            <li>Launch the MyBudget app</li>
-                            <li>Choose the <strong>Commun</strong> (Shared) or <strong>Perso</strong> (Personal) section</li>
-                            <li>Tap <strong>+</strong> to add your first transaction</li>
-                            <li>Select the type (Income or Expense) and category</li>
-                            <li>Enter the amount and save</li>
-                        </ol>
+                        <h3>📱 The 5 Tabs</h3>
+                        <p>The application is organized into 5 main tabs:</p>
+                        <ul>
+                            <li><strong>Summary</strong> - Monthly overview: start, income, expenses, end</li>
+                            <li><strong>Base</strong> - Shared budget (common expenses with percentage)</li>
+                            <li><strong>Perso</strong> - Your personal income and expenses</li>
+                            <li><strong>Visa</strong> - All transactions paid by Visa</li>
+                            <li><strong>Marge</strong> - Credit line management</li>
+                        </ul>
                     </article>
 
                     <article class="guide-article">
-                        <h3>👫 Shared Budget</h3>
-                        <p>The Commun section is designed for expenses shared between partners:</p>
+                        <h3>📋 Summary</h3>
+                        <p>The Summary tab displays an overview of your month:</p>
+                        <ul>
+                            <li><strong>Start</strong> - Balance at the beginning of the month (calculated automatically)</li>
+                            <li><strong>Income</strong> - Total Personal income for the month</li>
+                            <li><strong>Expenses</strong> - Account payable + Visa + Personal expenses</li>
+                            <li><strong>End</strong> - Expected balance at the end of the month</li>
+                            <li><strong>Account Payable</strong> - Amount to transfer for Base budget</li>
+                            <li><strong>Visa Payable</strong> - Total Visa purchases for the month</li>
+                            <li><strong>Credit Line Balance</strong> - Amount owed on credit line</li>
+                        </ul>
+                    </article>
+
+                    <article class="guide-article">
+                        <h3>🏠 Base Budget</h3>
+                        <p>The Base section is designed for expenses shared between partners:</p>
                         <ul>
                             <li><strong>Total Cost</strong> - The total amount of the expense</li>
                             <li><strong>Percentage</strong> - Your contribution share (e.g., 50%)</li>
-                            <li><strong>Contribution</strong> - Automatically calculated (Cost × %)</li>
+                            <li><strong>Contribution</strong> - Automatically calculated (Cost x %)</li>
+                            <li><strong>Budget</strong> - Check to mark as planned amount (vs actual)</li>
                         </ul>
-                        <p>The shared budget balance is automatically carried over to your Personal section as an expense.</p>
+                        <p>The header shows "Account Payable" (budget - actual) and "Deductions" (actual expenses).</p>
                     </article>
 
                     <article class="guide-article">
                         <h3>💵 Personal Budget</h3>
                         <p>The Perso section displays:</p>
                         <ul>
-                            <li>Your personal income (Salary, Bonus, etc.)</li>
-                            <li>Your personal expenses</li>
-                            <li>Your contribution to the shared budget (automatic)</li>
-                            <li>Available balance after all expenses</li>
+                            <li><strong>Start</strong> - Balance at the beginning of the month (editable for the first month)</li>
+                            <li><strong>Income</strong> - Salary, bonus, allowances, etc.</li>
+                            <li><strong>Expenses</strong> - Your personal expenses (non-Visa)</li>
+                        </ul>
+                        <p>Ending balance is calculated: Start + Income - (Account Payable + Visa + Expenses).</p>
+                    </article>
+
+                    <article class="guide-article">
+                        <h3>💳 Visa Tab</h3>
+                        <p>The Visa tab groups all transactions paid by Visa:</p>
+                        <ul>
+                            <li><strong>Previous</strong> - Visa balance from previous month (editable)</li>
+                            <li><strong>Monthly Total</strong> - Sum of Visa purchases this month</li>
+                            <li><strong>Balance</strong> - Total to pay (previous + month)</li>
+                        </ul>
+                        <p>Visa transactions can come from Base or Perso.</p>
+                    </article>
+
+                    <article class="guide-article">
+                        <h3>🏦 Credit Line</h3>
+                        <p>Manage your credit line:</p>
+                        <ul>
+                            <li><strong>Limit</strong> - Your credit limit (editable)</li>
+                            <li><strong>Used</strong> - Amount currently borrowed</li>
+                            <li><strong>Available</strong> - Remaining available credit</li>
+                            <li><strong>Borrowing</strong> - Add a withdrawal from the line</li>
+                            <li><strong>Repayment</strong> - Record a payment</li>
                         </ul>
                     </article>
 
                     <article class="guide-article">
                         <h3>🔄 Recurring Transactions</h3>
-                        <p>For monthly recurring expenses (rent, subscriptions, etc.):</p>
-                        <ol>
-                            <li>Swipe a transaction to the right</li>
-                            <li>Or use the context menu (long press)</li>
-                            <li>Select <strong>Duplicate to next month</strong></li>
-                        </ol>
-                        <p>The transaction will be copied with the same date to the next month.</p>
+                        <p>For monthly expenses (rent, subscriptions, etc.):</p>
+                        <ul>
+                            <li>Enable the <strong>Recurring</strong> toggle when creating</li>
+                            <li>The transaction will automatically appear each month</li>
+                            <li><strong>Skip a month:</strong> Disable the Recurring toggle in the month to skip</li>
+                            <li>The app ends the recurrence at the previous month and creates a new one the following month</li>
+                        </ul>
+                    </article>
+
+                    <article class="guide-article">
+                        <h3>📊 Budget Tracking</h3>
+                        <p>Compare your planned budget vs actual expenses:</p>
+                        <ul>
+                            <li>Accessible via the "Tracking" button in the menu</li>
+                            <li>Shows by category: budgeted, spent, remaining</li>
+                            <li>Color-coded progress bar (green/red)</li>
+                            <li>Budget usage percentage</li>
+                        </ul>
                     </article>
 
                     <article class="guide-article">
                         <h3>📱 Multi-device</h3>
                         <p>MyBudget automatically syncs your data via iCloud:</p>
                         <ul>
-                            <li>Make sure you're signed in to the same iCloud account on all your devices</li>
+                            <li>Sign in to the same iCloud account on all your devices</li>
                             <li>Enable iCloud for the app in Settings > [Your name] > iCloud</li>
-                            <li>Changes sync automatically every 60 seconds</li>
-                            <li>The iCloud icon in the navigation bar shows sync status</li>
                             <li>On iOS: pull down to force sync</li>
                             <li>On macOS: use Cmd+R to sync manually</li>
                         </ul>
@@ -214,20 +262,10 @@
                         <h3>📤 Export and Import</h3>
                         <p>Manage your data with export/import options:</p>
                         <ul>
-                            <li><strong>Export JSON</strong> - Save all your transactions in JSON format</li>
-                            <li><strong>Import JSON</strong> - Restore your data with automatic duplicate detection</li>
-                            <li><strong>Export Adhoc CSV</strong> - Export Adhoc transactions to CSV</li>
-                            <li><strong>Import from email</strong> - Paste a formatted email to create a transaction</li>
-                        </ul>
-                    </article>
-
-                    <article class="guide-article">
-                        <h3>📊 Reports</h3>
-                        <p>Analyze your finances with reports:</p>
-                        <ul>
-                            <li>Filter by year, month, section (Base/Perso) and recurrence</li>
-                            <li>View totals by category</li>
-                            <li>See the grand total for the period</li>
+                            <li><strong>Export JSON</strong> - Save all your transactions</li>
+                            <li><strong>Import JSON</strong> - Restore with duplicate detection</li>
+                            <li><strong>Export Adhoc CSV</strong> - Export Adhoc transactions</li>
+                            <li><strong>Import from email</strong> - Paste a formatted email</li>
                         </ul>
                     </article>
 
@@ -237,7 +275,7 @@
                         <ol>
                             <li>Long press on a transaction (or right-click on Mac)</li>
                             <li>Select "Send by email"</li>
-                            <li>The email will be pre-filled with transaction details</li>
+                            <li>The email will be pre-filled with the details</li>
                         </ol>
                         <p>Email import format:</p>
                         <pre>DATE: 2026-03-15
@@ -247,15 +285,6 @@ CATEGORY: Groceries
 AMOUNT: 150.00
 RECURRING: No
 NOTE: Weekly groceries</pre>
-                    </article>
-
-                    <article class="guide-article">
-                        <h3>🛠️ Maintenance</h3>
-                        <p>Maintenance options available in Options menu > Maintenance:</p>
-                        <ul>
-                            <li><strong>Remove duplicates</strong> - Clean up duplicate transactions</li>
-                            <li><strong>Clear database</strong> - Delete all transactions (with confirmation)</li>
-                        </ul>
                     </article>
                 </div>
             </div>
@@ -267,33 +296,38 @@ NOTE: Weekly groceries</pre>
 
                 <div class="faq-list">
                     <details class="faq-item">
-                        <summary>How does the shared budget calculation work in Personal?</summary>
-                        <p>In the Personal section, shared budget expenses and the shared balance are automatically added as expenses. This represents your total contribution to the shared budget.</p>
+                        <summary>How does "Account Payable" work in the Summary?</summary>
+                        <p>Account Payable = Base Budget - Actual Base Expenses + Adhoc. This is the net amount you need to transfer to the shared account.</p>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>How do I skip a month for a recurring transaction?</summary>
+                        <p>Go to the month you want to skip, open the recurring transaction and disable the "Recurring" toggle. The app will end the recurrence at the previous month and create a new one starting the following month.</p>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>What's the difference between Budget and non-Budget in Base?</summary>
+                        <p>"Budget" transactions represent your forecasts (planned amounts). Non-Budget transactions are actual expenses. Budget tracking compares the two.</p>
                     </details>
 
                     <details class="faq-item">
                         <summary>Can I enter negative amounts?</summary>
-                        <p>Yes, negative amounts are supported for refunds, credits or adjustments. Simply use the minus sign (-) before the amount.</p>
+                        <p>Yes, negative amounts are supported for refunds, credits or adjustments.</p>
                     </details>
 
                     <details class="faq-item">
-                        <summary>Is my data secure?</summary>
-                        <p>Yes, your data is stored in your private iCloud database. It's encrypted and only accessible by devices connected to your Apple account.</p>
-                    </details>
-
-                    <details class="faq-item">
-                        <summary>Can I share my budget with my partner?</summary>
-                        <p>Currently, each user has their own database. For a shared budget, you can each enter your respective contributions with your participation percentage.</p>
-                    </details>
-
-                    <details class="faq-item">
-                        <summary>How do I edit a transaction?</summary>
-                        <p>Tap on a transaction in the list to open the edit screen. You can also use the context menu (long press) and select "Edit".</p>
+                        <summary>How do I modify the starting balance?</summary>
+                        <p>In the Perso tab, tap on the "Start" amount to modify it. This is useful for the first month of use.</p>
                     </details>
 
                     <details class="faq-item">
                         <summary>Does data sync between iPhone and Mac?</summary>
-                        <p>Yes, as long as you're signed in to the same iCloud account and sync is enabled, your data is available on iPhone, iPad and Mac.</p>
+                        <p>Yes, via iCloud. Make sure you're signed in to the same iCloud account and sync is enabled.</p>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>How does the credit line work?</summary>
+                        <p>Set your limit and initial balance. Borrowings increase the used balance, repayments reduce it. Available = Limit - Used.</p>
                     </details>
                 </div>
             </div>
@@ -302,9 +336,9 @@ NOTE: Weekly groceries</pre>
 
     <footer class="footer">
         <div class="container">
-            <p>MyBudget © 2026 - Personal Budget Management App</p>
+            <p>MyBudget - Personal Budget Management App</p>
             <p class="footer-links">
-                <a href="../index.html">Français</a> |
+                <a href="../index.html">Francais</a> |
                 <a href="index.html">English</a>
             </p>
         </div>
